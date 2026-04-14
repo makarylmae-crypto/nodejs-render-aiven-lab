@@ -7,7 +7,7 @@ const db = mysql.createConnection({
   // Use env variables first, fall back to your specific Aiven details
   host: process.env.DB_HOST || "mysql-3597ae11-makarylmae-fccb.e.aivencloud.com",
   user: process.env.DB_USER || "avnadmin",
-  password: process.env.DB_PASSWORD, 
+  password: process.env.DB_PASSWORD || "AVNS_wpow1XW33XtmW6RqrPR",
   database: process.env.DB_NAME || "defaultdb",
   port: process.env.DB_PORT || 24521,
   // CRITICAL: Aiven requires SSL to allow the connection
